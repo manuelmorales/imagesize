@@ -57,6 +57,8 @@ class ImageSize
     else
       raise "argument class error!! #{img_data.type}"
     end
+
+    raise "empty image" if img_top.nil?
     
     if @img_type.nil?
       @img_type = check_type(img_top)
